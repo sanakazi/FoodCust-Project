@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg">
+    
+    
+     <ImageView
+         android:id="@+id/imgLogo"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="150dp"
+         android:src="@drawable/logo" />
+    
+    
+      <EditText
+       
+         android:id="@+id/et1"
+         android:layout_width="300dp"
+         android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+         android:layout_below="@+id/imgLogo"
+         android:background="@drawable/username"
+         android:hint="Email or Mobile No"
+         android:gravity="center"
+         android:textSize="14sp"
+         />"
+      
+        <EditText
+         android:id="@+id/et2"
+         android:layout_width="300dp"
+         android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/et1"
+         android:layout_marginTop="20dp"
+        android:hint="Password"
+       android:background="@drawable/password"
+         android:password="true"
+         android:gravity="center"
+          android:textSize="14sp"/>
+       
+       
+         <ImageView
+         android:id="@+id/imgdiv"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/et2"
+         android:layout_alignTop="@+id/tvRegister"
+         android:layout_alignBottom="@+id/tvRegister"
+         android:layout_centerHorizontal="true"
+         android:src="@drawable/devider" />
+       
+           <TextView
+           android:id="@+id/textView2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/et2"
+           android:layout_marginRight="40dp"
+           android:layout_alignTop="@+id/tvRegister"
+            android:layout_alignBottom="@+id/tvRegister"
+           android:layout_alignParentRight="true"
+           android:text="Forgot Password?"
+           android:textColor="@android:color/white" />
+           
+              
+
+       <Button
+           android:id="@+id/btn1"
+           android:layout_width="300dp"
+           android:layout_height="30dp"
+           android:layout_alignLeft="@+id/et2"
+           android:layout_below="@+id/tvRegister"
+           android:layout_marginTop="24dp"
+           android:background="@drawable/button"
+           android:gravity="center"
+           android:text="Login"
+           android:textColor="@android:color/white" />
+
+       <TextView
+           android:id="@+id/tvRegister"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/imgLogo"
+           android:layout_below="@+id/et2"
+           android:layout_marginTop="27dp"
+           android:text="Register Now"
+           android:textColor="@android:color/white" />
+   
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.foodcust"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.foodcust.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.foodcust.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.example.foodcust.ForgotPasswordActivity"
+            android:label="@string/title_activity_forgot_password" >
+        </activity>
+        <activity
+            android:name="com.example.foodcust.SignUpActivity"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+        <activity
+            android:name="com.example.foodcust.LocationActivity"
+            android:label="@string/title_activity_location" >
+        </activity>
+        <activity
+            android:name="com.example.foodcust.LocationStartScreenActivity"
+            android:label="@string/title_activity_location_start_screen" >
+        </activity>
+        <activity
+            android:name="com.example.foodcust.SelectCusineByRestaurantId"
+            android:label="@string/title_activity_select_cusine_by_restaurant_id" >
+        </activity>
+        <activity
+            android:name="com.example.foodcust.Dummy"
+            android:label="Dummy" >
+        </activity>
+        <activity
+            android:name="com.example.foodcust.EditLocationActivity"
+            android:label="@string/title_activity_edit_location" >
+        </activity>
+        <activity
+            android:name="com.example.foodcust.CollectionSelectCusineByRestaurantId"
+            android:label="@string/title_activity_collection_select_cusine_by_restaurant_id" >
+        </activity>
+        <activity
+            android:name="com.example.foodcust.ViewPagerSelectCusineByRestaurantIdActivity"
+            android:label="@string/title_activity_view_pager_select_cusine_by_restaurant_id" >
+        </activity>
+        <activity
+            android:name="com.example.foodcust.LaunchingActivity"
+            android:label="@string/title_activity_launching" >
+        </activity>
+        <activity
+            android:name="com.example.foodcust.Checkout1Activity"
+            android:label="@string/title_activity_checkout1" >
+        </activity>
+    </application>
+
+</manifest>

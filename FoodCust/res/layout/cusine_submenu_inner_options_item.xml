@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp" 
+    android:layout_marginBottom="5dp">
+   
+<TextView 
+    android:id="@+id/txt1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Hie"
+    android:layout_marginRight="15dp"
+    android:paddingLeft="5dp"/>
+
+<RadioButton
+     android:id="@+id/cb"
+     android:layout_width="30dp"
+     android:layout_height="20dp"
+     android:layout_alignParentRight="true"
+     android:layout_alignTop="@id/txt1"
+     android:layout_marginRight="50dp" />
+
+ <TextView
+     android:id="@+id/txt3"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentTop="true"
+     android:layout_marginRight="15dp"
+     android:layout_toLeftOf="@id/cb"
+     android:text="200" 
+     android:layout_marginLeft="3dp"/>
+ 
+ <ImageView 
+    android:id="@+id/txt2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/rupee"
+    android:layout_toLeftOf="@id/txt3"
+    android:layout_alignTop="@id/txt3"
+    android:paddingTop="3dp"
+   />
+
+ 
+ 
+</RelativeLayout>

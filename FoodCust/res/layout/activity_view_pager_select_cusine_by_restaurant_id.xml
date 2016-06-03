@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewPagerSelectCusineByRestaurantIdActivity" 
+    android:id="@+id/layout1">"
+
+     <RelativeLayout
+         android:id="@+id/layout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:paddingTop="5dp"
+         android:paddingBottom="5dp"
+         android:background="#EEEEEE"
+         android:orientation="horizontal"
+            android:visibility="gone">
+
+         <ImageView
+             android:id="@+id/img1"
+             android:layout_width="50dp"
+             android:layout_height="30dp"
+             android:layout_marginLeft="5dp"
+             android:src="@drawable/cart" />
+
+         <ImageView
+             android:id="@+id/img2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBottom="@+id/txtrupee"
+             android:layout_alignTop="@+id/txtrupee"
+             android:layout_marginLeft="30dp"
+             android:layout_toRightOf="@+id/img1"
+             android:src="@drawable/rupee" />
+
+         <Button
+             android:id="@+id/img4"
+             android:layout_width="130dp"
+             android:layout_height="wrap_content"
+             android:layout_alignBottom="@+id/img1"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentTop="true"
+             android:background="@drawable/checkout"
+             android:gravity="left|center"
+             android:text="  CHECKOUT" 
+             android:fontFamily="raleway"
+             android:textColor="#ffffff"
+             android:textSize="15dp"/>r
+
+         <TextView
+             android:id="@+id/txtrupee"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_toRightOf="@+id/img2"
+             android:src="@drawable/rupee"
+             android:text="100" />
+
+         <TextView
+             android:id="@+id/txtnumber"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_marginLeft="35dp"
+             android:text="1" />
+     </RelativeLayout>
+
+     <android.support.v4.view.ViewPager
+         android:id="@+id/pager"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_above="@+id/layout"
+         android:layout_alignParentLeft="true" >
+     </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

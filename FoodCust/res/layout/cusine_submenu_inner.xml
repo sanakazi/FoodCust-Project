@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+     android:focusable="false"
+       android:clickable="false">
+
+   <ImageView
+       android:id="@+id/inner_img"
+       android:layout_width="15dip"
+       android:layout_height="15dip"
+       
+       android:layout_alignBottom="@+id/inner"
+       android:layout_marginLeft="20dp"
+       android:layout_marginTop="5dp"
+       android:src="@drawable/veg" 
+       android:focusable="false"
+       android:clickable="false"/>
+    
+   <TextView
+          android:id="@+id/inner"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@id/inner_img"
+          android:paddingLeft="3dp"
+          android:layout_marginRight="3dp"
+          android:paddingTop="3dp"
+          android:text="Hie"
+          android:textSize="15dip"
+          android:focusable="false"
+          android:clickable="false" 
+          android:fontFamily="raleway"
+             android:textColor="#000000"
+           />
+    
+   <TextView
+          android:id="@+id/inner_txt2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/inner"
+          android:layout_below="@+id/inner"
+          android:clickable="false"
+          android:focusable="false"
+          android:paddingBottom="2dp"
+          android:paddingLeft="3dp"
+          android:paddingTop="2dp"
+          android:text="Hie"
+          android:textColor="#000000"
+          android:textSize="10dip" 
+          android:fontFamily="roboto thin"       />
+    
+     
+    <ImageView
+        android:id="@+id/inner_txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:layout_below="@id/inner_txt2"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"
+        android:src="@drawable/rupee"
+        android:focusable="false"
+       android:clickable="false"/>
+    
+     <TextView
+        android:id="@+id/inner_txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dip"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_below="@id/inner_txt2"
+        android:layout_toRightOf="@id/inner_txt3"
+       android:layout_marginLeft="2dp"
+        android:text="190" 
+       android:focusable="false"
+       android:clickable="false"
+       android:fontFamily="raleway"
+         android:textColor="#000000"/>
+     
+     <Button
+         android:id="@+id/inner_btnminus"
+         android:layout_width="20dp"
+         android:layout_height="25dp"
+        
+         android:layout_alignTop="@id/inner_txt4"
+         android:layout_below="@id/inner_txt2"
+         android:layout_marginLeft="15dp"
+         android:layout_toRightOf="@id/inner_txt4"
+         android:background="@drawable/minus"
+         android:focusable="false"
+         android:paddingBottom="5dp"
+         android:paddingTop="5dp" />
+     
+     <TextView
+        android:id="@+id/inner_txtresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dip"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_below="@id/inner_txt2"
+        android:layout_toRightOf="@id/inner_btnminus"
+       android:layout_marginLeft="12dp"
+        android:text="0" 
+        android:focusable="false"
+       android:clickable="false"/>
+     
+       <Button
+         android:id="@+id/inner_btnplus"
+        android:layout_width="20dp"
+         android:layout_height="25dp"
+         android:layout_alignTop="@id/inner_txt4"
+         android:layout_below="@id/inner_txt2"
+         android:layout_marginLeft="15dp"
+         android:layout_toRightOf="@id/inner_txtresult"
+         android:background="@drawable/plus"
+         android:focusable="false"
+         android:paddingBottom="5dp"
+         android:paddingTop="5dp" />
+      
+     <Button
+         android:id="@+id/inner_btnOption"
+         android:layout_width="60dp"
+         android:layout_height="25dp"
+         android:layout_alignParentRight="true"
+         android:layout_below="@id/inner_txt2"
+         android:layout_marginRight="10dp"
+         android:background="@drawable/options"
+         android:focusable="false"
+         android:gravity="center"
+         android:text="OPTION"
+         android:textColor="#ffffff"
+         android:textSize="10dp" 
+         android:layout_marginBottom="5dp"
+         android:visibility="invisible"/>
+   
+      <View
+          android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" 
+        android:focusable="false"
+         android:clickable="false"/>
+
+     
+ 
+</RelativeLayout>

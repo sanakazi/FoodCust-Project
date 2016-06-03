@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:focusable="false"
+android:clickable="false" >
+    
+    <ImageView 
+    android:id="@+id/img1"  
+    android:layout_width="100dp"
+    android:layout_height="80dp" 
+    android:src="@drawable/ic_launcher"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:focusable="false"
+android:clickable="false"/>
+    
+    <TextView
+    android:id="@+id/txt_restName"   
+    android:layout_width="120dp"
+    android:layout_height="wrap_content" 
+    android:text="Restaurant Name"
+    android:textSize="15dp"
+    android:layout_toRightOf="@id/img1"
+     android:layout_marginTop="10dp"
+     android:focusable="false"
+     android:clickable="false"/>
+    
+        <TextView
+              android:id="@+id/txt_rating"
+              android:layout_width="20dp"
+              android:layout_height="wrap_content"
+              android:layout_alignTop="@+id/txt_restName"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="8dp"
+              android:background="@drawable/options"
+              android:text="5.0" 
+              android:textSize="8dp"
+              android:textColor="#ffffff"
+              android:gravity="center"
+              android:focusable="false"
+android:clickable="false"/>
+    
+    
+    
+    <TextView
+    android:id="@+id/txt_morning_time"   
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:text="Morning Time: "
+    android:textSize="13dp"
+    android:layout_toRightOf="@id/img1"
+    android:layout_below="@id/txt_restName"
+    android:focusable="false"
+    android:clickable="false"/>
+    
+     <ImageView
+    android:id="@+id/img_timing"   
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:src="@drawable/timing"
+    android:layout_toRightOf="@id/img1"
+    android:layout_below="@id/txt_morning_time"
+    android:focusable="false"
+    android:clickable="false"/>
+    
+        <TextView
+    android:id="@+id/txt_morning_time_start"   
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:text="09:00 AM"
+    android:textSize="10dp"
+    android:layout_toRightOf="@id/img_timing"
+    android:layout_below="@id/txt_morning_time"
+    android:focusable="false"
+    android:clickable="false"/>
+        
+        
+         <ImageView
+    android:id="@+id/info_icon"   
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:src="@drawable/info"
+    android:layout_toRightOf="@id/img1"
+    android:layout_marginTop="10dp"
+    android:layout_below="@id/txt_morning_time_start"
+    android:focusable="false"
+android:clickable="false"/>
+        
+                <TextView
+    android:id="@+id/info"   
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:text="A good place for breakfast"
+    android:layout_toRightOf="@id/info_icon"
+    android:layout_marginTop="10dp"
+    android:layout_below="@id/txt_morning_time_start"
+    android:focusable="false"
+android:clickable="false"/>
+                
+                
+   
+  <ImageView
+    android:id="@+id/img_resto"   
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:src="@drawable/resto"
+    android:layout_toRightOf="@id/img1"
+    android:layout_marginTop="10dp"
+    android:layout_below="@id/info"
+    android:focusable="false"
+android:clickable="false"/>
+                
+                <TextView
+    android:id="@+id/address"   
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:text="Address"
+    android:layout_toRightOf="@id/img_resto"
+    android:layout_marginTop="10dp"
+    android:layout_below="@id/info"
+    android:focusable="false"
+android:clickable="false"/>
+    
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignRight="@+id/txt_morning_time_end"
+        android:layout_below="@id/address"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/img1"
+        
+        android:background="@drawable/options"
+        android:text="Order"
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="10dp" 
+        android:focusable="false"
+android:clickable="false"/>
+    
+       <Button
+           android:id="@+id/btn_pre_order"
+           android:layout_width="wrap_content"
+           android:layout_height="30dp"
+           android:layout_below="@id/address"
+           android:layout_marginBottom="10dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="10dp"
+           android:layout_toLeftOf="@+id/txt_evening_time_end"
+           android:layout_toRightOf="@id/btn_order"
+           android:background="@drawable/options"
+           android:text="Pre-order"
+           android:textSize="15dp"
+           android:textColor="#ffffff"
+           android:focusable="false"
+android:clickable="false" />
+        
+          <TextView
+    android:id="@+id/hyphen"   
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:text="-"
+    android:textSize="10dp"
+    android:layout_toRightOf="@id/txt_morning_time_start"
+    android:layout_below="@id/txt_morning_time"
+    android:focusable="false"
+android:clickable="false"/>
+    
+    
+          <TextView
+    android:id="@+id/txt_morning_time_end"   
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:text="12:00 PM"
+    android:textSize="10dp"
+    android:layout_toRightOf="@id/hyphen"
+    android:layout_below="@id/txt_morning_time"
+    android:focusable="false"
+android:clickable="false"/>
+
+    <TextView
+        android:id="@+id/txt_evening_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_morning_time"
+        android:layout_alignBottom="@+id/txt_morning_time"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/txt_restName"
+        android:text="Evening Time: " 
+        android:focusable="false"
+android:clickable="false"/>
+    
+    
+     <ImageView
+    android:id="@+id/img2_timing"   
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:src="@drawable/timing"
+    android:layout_alignLeft="@id/txt_evening_time"
+    android:layout_below="@id/txt_evening_time"
+    android:focusable="false"
+android:clickable="false"/>
+    
+     <TextView
+    android:id="@+id/txt_evening_time_start"   
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:text="08:30 AM"
+    android:textSize="10dp"
+    android:layout_toRightOf="@id/img2_timing"
+    
+    android:layout_below="@id/txt_evening_time"
+    android:focusable="false"
+android:clickable="false"/>
+        
+          <TextView
+    android:id="@+id/hyphen1"   
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:text="-"
+    android:textSize="10dp"
+    android:layout_toRightOf="@id/txt_evening_time_start"
+    android:layout_below="@id/txt_evening_time"
+    android:focusable="false"
+android:clickable="false"/>
+    
+    
+          <TextView
+    android:id="@+id/txt_evening_time_end"   
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:text="01:30 PM"
+    android:textSize="10dp"
+    android:layout_toRightOf="@id/hyphen1"
+    android:layout_below="@id/txt_evening_time"
+    android:focusable="false"
+android:clickable="false"/>
+
+      
+
+          <TextView
+              android:id="@+id/txt_rest_time_status"
+              android:layout_width="35dp"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/img1"
+              android:layout_below="@+id/img1"
+              android:background="@drawable/options"
+              android:clickable="false"
+              android:focusable="false"
+              android:gravity="center"
+              android:text="OPEN"
+              android:textColor="#ffffff"
+              android:textSize="7dp" />
+
+          <TextView
+              android:id="@+id/txt_distance"
+              android:layout_width="25dp"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/img1"
+              android:layout_toRightOf="@+id/txt_rest_time_status"
+              android:layout_marginLeft="5dp"
+              android:background="@drawable/options"
+              android:clickable="false"
+              android:focusable="false"
+              android:gravity="center"
+              android:text="1.82"
+              android:textColor="#ffffff"
+              android:textSize="8dp" />
+
+          <TextView
+              android:id="@+id/txt_distance_text"
+              android:layout_width="40dp"
+              android:layout_height="wrap_content"
+              android:layout_alignRight="@+id/img1"
+              android:layout_below="@+id/img1"
+              android:layout_toRightOf="@+id/txt_distance"
+              android:background="@drawable/options"
+              android:clickable="false"
+              android:focusable="false"
+              android:gravity="center|left"
+              android:text="KM AWAY"
+              android:textColor="#ffffff"
+              android:textSize="7dp" />
+          
+          <View
+          android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" 
+        android:focusable="false"
+         android:clickable="false"/>
+
+</RelativeLayout>
